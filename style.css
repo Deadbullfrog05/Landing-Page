@@ -1,0 +1,227 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(./metropolis.medium.otf);
+}
+
+/* INFO SECTION */
+.information{
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #372583;
+}
+
+.information-reverse{
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 900px) {
+  .information {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+}
+
+.info-top{
+    font-family: Metropolis, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.info-middle{
+    font-family: Metropolis, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0px;
+}
+
+.info-para{
+    font-family: Metropolis, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 34px;
+    width: 400px;
+    letter-spacing: -0.25px;
+}
+
+@media only screen and (max-width: 900px) {
+    .info-top{
+        font-size: 18px;
+    }
+
+    .info-middle{
+        font-size: 30px;
+    }
+
+    .info-para{
+        max-width: 300px;
+        font-size: 16px;
+    }
+}
+
+.early-access{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 16px;
+    background: #372583;
+    box-shadow: 0px 2px 8px rgba(55, 37, 131, 0.24);
+    border-radius: 8px;
+    margin-top: 80px;
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.image{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-small{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .screen-small{
+      display: flex;
+  }
+
+  .screen-large{
+      display: none;
+  }
+}
+
+/* FOOTER SECTION */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+  footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+  }
+
+  footer .name img{
+      width: 70px;
+  }
+
+  footer > .name{
+    padding-top: 60px;
+}
+}
+
+footer > .name{
+    margin-bottom: 30px;
+}
+
+.logos{
+    margin-bottom: 30px;
+}
+
+.logos > a > img{
+    margin-left: 15px;
+}
+
+.copyright{
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #372583;
+    margin-bottom: 30px;
+}
+
+
+.infortica{
+   padding: 70px;
+   padding-top: 130px;
+   padding-bottom: 130px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   background-color:#222222;
+   ;
+}
+.text2-cs{
+   font-family: Metropolis,sans-serif;
+   font-size: 72px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 84px;
+   letter-spacing: 0px;
+   text-align: left;
+   color: #FFCE44;
+}
+.text1-cs{
+   font-family: Metropolis,sans-serif;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 40px;
+   letter-spacing: 0px;
+   text-align: left;
+   color:white;
+}
+.word{
+   color:#FFCE44
+}
+@media only screen and (max-width: 1000px) {
+   .infortica {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .text1-cs{
+       font-size: 18px;
+   }
+   .text2-cs{
+       font-size: 40px;
+   }
+ }
+
+
